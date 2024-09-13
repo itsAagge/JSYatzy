@@ -4,27 +4,39 @@
     </head>
     <body>
         <div id="DiceArea">
+            <table></table>
+                <tr>
+                    <td><img src="https://a.l3n.co/i/8WU5ID.png" alt="FaceOne" class="Dice"></td>
+                    <td><img src="https://a.l3n.co/i/8Wc28M.png" alt="FaceTwo" class="Dice"></td>
+                    <td> <img src="https://a.l3n.co/i/8WUauA.png" alt="FaceThree" class="Dice"></td>
+                    <td><img src="https://a.l3n.co/i/8WUxU0.png" alt="FaceFour" class="Dice"></td>
+                    <td><img src="https://a.l3n.co/i/8WUw73.png" alt="FaceFive" class="Dice"></td>
+                </tr>
+                <tr></tr>
+                <tr><td><label id="lblTurn"> Turn:</label></td> <td id="Turn"> 0 </td></tr>
+                <tr><td></td><td></td><td></td><td></td><td><button id="Button"> Roll </button></td></tr>
+            </table>
             
         </div>
         <div id="ResultArea">
             <table>
-            <tr><td><label id="lbl1s"> 1-s </label></td> <td><input type="text" readonly = "readonly" id="1-s"> </input></td></tr>
-            <tr><td><label id="lbl2s"> 2-s </label></td> <td><input type="text" readonly = "readonly"id="2-s"> </input></td></tr>
-            <tr><td><label id="lbl3s"> 3-s </label></td> <td><input type="text" readonly = "readonly"id="3-s"> </input></td></tr>
-            <tr><td><label id="lbl4s"> 4-s </label></td> <td><input type="text" readonly = "readonly"id="4-s"> </input></td></tr>
-            <tr><td><label id="lbl5s"> 5-s </label></td> <td><input type="text" readonly = "readonly"id="5-s"> </input></td></tr>
-            <tr><td><label id="lbl6s"> 6-s </label></td> <td><input type="text" readonly = "readonly"id="6-s"> </input></td> 
-                <td><label id="lblSum"> Sum: </label></td><td><input type="text" id="Sum"> </td><td> <label id="lblBonus"> Bonus: </label></td><td><input type="text" id="Bonus"></td></tr>
-            <tr><td><label id="lblOne pair"> One pair </label></td> <td><input type="text" readonly = "readonly"id="One pair"> </input></td></tr>
-            <tr><td><label id="lblTwo pairs"> Two pairs </label></td> <td><input type="text" readonly = "readonly"id="Two pairs"> </input></td></tr>
-            <tr><td><label id="lblThree same"> Three same </label></td> <td><input type="text" readonly = "readonly"id="Three same"> </input></td></tr>
-            <tr><td><label id="lblFour same"> Four same </label></td> <td><input type="text" readonly = "readonly"id="Four same"> </input></td></tr>
-            <tr><td><label id="lblFull house"> Full house </label></td> <td><input type="text" readonly = "readonly"id="Full house"> </input></td></tr>
-            <tr><td><label id="lblSmall straight"> Small straight </label></td> <td><input type="text" readonly = "readonly"id="Small straight"> </input></td></tr>
-            <tr><td><label id="lblLarge straight"> Large straight </label></td> <td><input type="text" readonly = "readonly"id="Large straight"> </input></td></tr>
-            <tr><td><label id="lblChance"> Chance </label></td> <td><input type="text" readonly = "readonly"id="Chance"> </input></td></tr>
-            <tr><td><label id="lblYatzy"> Yatzy </label></td> <td><input type="text" readonly = "readonly"id="Yatzy"> </input></td>
-            <td></td><td></td><td><label id="lblTotal"> Total: </label></td><td><input type="text" id="Total"></td></tr>
+            <tr><td><label id="lbl1s"> 1-s </label></td> <td><input type="text" readonly = "readonly" id="1-s" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lbl2s"> 2-s </label></td> <td><input type="text" readonly = "readonly"id="2-s" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lbl3s"> 3-s </label></td> <td><input type="text" readonly = "readonly"id="3-s" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lbl4s"> 4-s </label></td> <td><input type="text" readonly = "readonly"id="4-s" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lbl5s"> 5-s </label></td> <td><input type="text" readonly = "readonly"id="5-s" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lbl6s"> 6-s </label></td> <td><input type="text" readonly = "readonly"id="6-s" class="ResultText"> </input></td> 
+                <td><label id="lblSum"> Sum: </label></td><td><input type="text" id="Sum" class="ResultText"> </td><td> <label id="lblBonus"> Bonus: </label></td><td><input type="text" id="Bonus" class="ResultText"></td></tr>
+            <tr><td><label id="lblOne pair"> One pair </label></td> <td><input type="text" readonly = "readonly"id="One pair" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblTwo pairs"> Two pairs </label></td> <td><input type="text" readonly = "readonly"id="Two pairs" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblThree same"> Three same </label></td> <td><input type="text" readonly = "readonly"id="Three same" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblFour same"> Four same </label></td> <td><input type="text" readonly = "readonly"id="Four same" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblFull house"> Full house </label></td> <td><input type="text" readonly = "readonly"id="Full house" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblSmall straight"> Small straight </label></td> <td><input type="text" readonly = "readonly"id="Small straight" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblLarge straight"> Large straight </label></td> <td><input type="text" readonly = "readonly"id="Large straight" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblChance"> Chance </label></td> <td><input type="text" readonly = "readonly"id="Chance" class="ResultText"> </input></td></tr>
+            <tr><td><label id="lblYatzy"> Yatzy </label></td> <td><input type="text" readonly = "readonly"id="Yatzy" class="ResultText"> </input></td>
+            <td></td><td></td><td><label id="lblTotal"> Total: </label></td><td><input type="text" id="Total" class="ResultText"></td></tr>
         </table>
         </div>
     </body>
