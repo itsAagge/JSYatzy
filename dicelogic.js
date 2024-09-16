@@ -2,10 +2,10 @@ export { rollDice, saveScore, getDiceArray, getResultsArray, getNumberOfThrowsLe
 //data fields
 let diceArr = Array(5).fill(0) //Holds the faces of the rolled dice
 let holdArr = Array(5).fill(false) //Holds the true/false value if a dice should be hold (not be rolled again)
-let resultsArr = Array(17).fill(0) /* 0 = Ones, 1 = Twos, 2 = Threes, 3 = Fours, 4 = Fives, 5 = Sixes, 6 = Sum of upper (only the locked),
+let resultsArr = Array(18).fill(0) /* 0 = Ones, 1 = Twos, 2 = Threes, 3 = Fours, 4 = Fives, 5 = Sixes, 6 = Sum of upper (only the locked),
                                     * 7 = Bonus of upper (only when all are locked and it is high enough), 8 = One pair, 9 = Two pairs, 10 = Three of a kind,
                                     * 11 = Four of a kind, 12 = Small straight, 13 = Large straight, 14 = Full house, 15 = Chance, 16 = Yatzy, 17 = Total sum (of all locked answers) */
-let reslutsBoolArr = Array(17).fill(false) //Matches the one above (indexes 6, 7 and 17 are not used)
+let reslutsBoolArr = Array(18).fill(false) //Matches the one above (indexes 6, 7 and 17 are not used)
 let nrOfThrowsLeft = 3;
 
 let diceCountArr = Array(5).fill(0) //Holds the thrown dice divided up in faces (e.g. if you have rolled 3 ones, this array will have the number 3 on index 0)
@@ -69,7 +69,7 @@ function updateResults() {
     for (let i = 0; i < 6; i++) {
         let j = upperSectionScore(i + 1)
         if (!reslutsBoolArr[i]) resultsArr[i] = j;
-        diceCountArr[i] = j;
+        diceCountArr[i] = j / (i + 1);
     }
     
     //For the lower section scores
