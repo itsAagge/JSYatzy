@@ -29,6 +29,12 @@ body {
 }
 */
 
+
+#myDiv {
+    align-items: center;
+    column-gap: 200px;
+}
+
 .ResultText {
     margin: 10px;
     padding: 10px;
@@ -45,8 +51,10 @@ body {
 
 .result-Item {
     text-align: left;
+    align-items: center;
 }
 
 .input-item {
     text-align: center;
+    align-items: center;
 }
