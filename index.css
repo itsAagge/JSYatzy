@@ -16,6 +16,7 @@ body {
     justify-content: center;
     padding: 20px;
     border-style: solid;
+    border-color: violet;
     margin: 20px;
     span {
         color: white;
@@ -45,6 +46,7 @@ body {
     margin: 20px;
     align-items: center;
     border-style: solid;
+    border-color: violet;
     padding: 50px;
     label {
         color: white;
