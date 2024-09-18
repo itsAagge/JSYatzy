@@ -12,116 +12,49 @@
                     <img src="https://a.l3n.co/i/8WUauA.png" alt="FaceThree" class="Dice"></td>
                     <img src="https://a.l3n.co/i/8WUxU0.png" alt="FaceFour" class="Dice"></td>
                     <img src="https://a.l3n.co/i/8WUw73.png" alt="FaceFive" class="Dice"></td>
-                    </div>
 
-                    <div>
-                        <label id="lblTurn"> Turn:</label>
-                        <div id="Turn" class="turn-number">0</div>
-                    </div>
-                    <div class="button">
-                        <button id="Button"> Roll </button>
-                    </div>
+                    <span id="Turn" class="turn-number"><label id="lblTurn"> Turn:</label>0</span>
+                    <button id="Button"> Roll </button>
         </div>
 
         <div id="ResultArea">
            
-            <div id="myDiv"><label id="lbl1s"> 1-s </label> <input type="text" readonly = "readonly" id="1-s" class="ResultText"> </input></div> <!-- Her -->
+            <label id="lbl1s" class="resultLabel"> 1-s </label> <input type="text" readonly = "readonly" id="1-s" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lbl2s"> 2-s </label>
-        </div>
-        <div class="input-item"><input type="text" readonly = "readonly"id="2-s" class="ResultText"> </input></div>
+            <label id="lbl2s" class="resultLabel"> 2-s </label><input type="text" readonly = "readonly"id="2-s" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lbl3s"> 3-s </label>
-        </div>
-        <div class="input-item">   <input type="text" readonly = "readonly"id="3-s" class="ResultText"> </input></div>
-
-            <div class="result-item">
-            <label id="lbl4s"> 4-s </label>
-        </div>
-        <div class="input-item">  <input type="text" readonly = "readonly"id="4-s" class="ResultText"> </input></div>
-
-            <div class="result-item">
-            <label id="lbl5s"> 5-s </label>
-        </div>
-        <div class="input-item"><input type="text" readonly = "readonly"id="5-s" class="ResultText"> </input></div>
-            
-            <div class="result-item">
-            <label id="lbl6s"> 6-s </label>
-        </div>
-        <div class="input-item"><input type="text" readonly = "readonly"id="6-s" class="ResultText"> </input></div>
-            
-            <div class="result-item">
-            <label id="lblSum"> Sum: </label>
-        </div>
-        <div class="input-item"><input type="text" readonly = "readonly"id="Sum" class="ResultText"></input></div>
-
-            <div class="result-item">
-            <label id="lblBonus"> Bonus: </label>
-        </div>
-        <div class="input-item"><input type="text" readonly = "readonly"id="Bonus" class="ResultText"></input></div>
-            
-            <div class="result-item">
-            <label id="lblOne pair"> One pair </label>
-        </div>
-
-        <div class="input-item"><input type="text" readonly = "readonly"id="One pair" class="ResultText"> </input></div>
-
-            <div class="result-item">
-            <label id="lblTwo pairs"> Two pairs </label>
-        </div>
-
-        <div class="input-item"><input type="text" readonly = "readonly"id="Two pairs" class="ResultText"> </input></div>
-
-            <div class="result-item">
-            <label id="lblThree same"> Three same </label>
-        </div>
-
-        <div class="input-item"><input type="text" readonly = "readonly"id="Three same" class="ResultText"> </input></div>
         
-            <div class="result-item">
-            <label id="lblFour same"> Four same </label>
-        </div>
+            <label id="lbl3s" class="resultLabel"> 3-s </label><input type="text" readonly = "readonly"id="3-s" class="ResultText"> </input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Four same" class="ResultText"> </input></div>
+            <label id="lbl4s" class="resultLabel"> 4-s </label><input type="text" readonly = "readonly"id="4-s" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lblFull house"> Full house </label>
-        </div>
+            <label id="lbl5s" class="resultLabel"> 5-s </label><input type="text" readonly = "readonly"id="5-s" class="ResultText"> </input>
+            
+            <label id="lbl6s" class="resultLabel"> 6-s </label><input type="text" readonly = "readonly"id="6-s" class="ResultText"> </input>
+            
+            <label id="lblSum" class="SumLabel"> Sum: </label><input type="text" readonly = "readonly"id="Sum" class="ResultText"></input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Full house" class="ResultText"> </input></div>
+            <label id="lblBonus" class="BonusLabel"> Bonus: </label><input type="text" readonly = "readonly"id="Bonus" class="ResultText"></input>
+            
+            <label id="lblOne pair" class="resultLabel"> One pair </label><input type="text" readonly = "readonly"id="One pair" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lblSmall straight"> Small straight </label>
-        </div>
+            <label id="lblTwo pairs" class="resultLabel"> Two pairs </label><input type="text" readonly = "readonly"id="Two pairs" class="ResultText"> </input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Small straight" class="ResultText"> </input></div>
+            <label id="lblThree same" class="resultLabel"> Three same </label><input type="text" readonly = "readonly"id="Three same" class="ResultText"> </input>
         
-            <div class="result-item">
-            <label id="lblLarge straight"> Large straight </label>
-        </div>
+            <label id="lblFour same" class="resultLabel"> Four same </label><input type="text" readonly = "readonly"id="Four same" class="ResultText"> </input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Large straight" class="ResultText"> </input></div>
+            <label id="lblFull house" class="resultLabel"> Full house </label><input type="text" readonly = "readonly"id="Full house" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lblChance"> Chance </label>
-        </div>
+            <label id="lblSmall straight" class="resultLabel"> Small straight </label><input type="text" readonly = "readonly"id="Small straight" class="ResultText"> </input>
+        
+            <label id="lblLarge straight" class="resultLabel"> Large straight </label><input type="text" readonly = "readonly"id="Large straight" class="ResultText"> </input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Chance" class="ResultText"> </input></div>
+            <label id="lblChance" class="resultLabel"> Chance </label><input type="text" readonly = "readonly"id="Chance" class="ResultText"> </input>
 
-            <div class="result-item">
-            <label id="lblYatzy"> Yatzy </label>
-        </div>
+            <label id="lblYatzy" class="resultLabel"> Yatzy </label><input type="text" readonly = "readonly"id="Yatzy" class="ResultText"> </input>
 
-        <div class="input-item"><input type="text" readonly = "readonly"id="Yatzy" class="ResultText"> </input></div>
-
-            <div class="result-item">
-            <label id="lblTotal"> Total: </label>
-        </div>
-
-        <div class="input-item"><input type="text" id="Total" class="ResultText"></input></div>
-
+            <label id="lblTotal" class="TotalLabel"> Total: </label><input type="text" id="Total" class="ResultText"></input>
         </div>
     </body>
 </html>

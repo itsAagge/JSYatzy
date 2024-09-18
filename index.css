@@ -12,49 +12,58 @@ body {
     gap: 10px;
     justify-content: center;
     padding: 20px;
+    border-style: solid;
+    margin: 20px;
 }
 
 .Dice {
-    width: 50px;
-    height: 50px;
-    padding: 20px;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    color: rgba(59, 50, 50, 0.19);
 }
 
-/*
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-}
-*/
-
-
-#myDiv {
-    align-items: center;
-    column-gap: 200px;
-}
 
 .ResultText {
-    margin: 10px;
-    padding: 10px;
-    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    width: 70%;
 }
 
 #ResultArea {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(6, auto); 
+    gap: 0px;
     max-width: 800px;
     margin: 20px;
+    align-items: center;
+    border-style: solid;
+    padding: 50px;
+    
 }
 
-.result-Item {
-    text-align: left;
-    align-items: center;
-}
 
 .input-item {
     text-align: center;
     align-items: center;
+}
+
+.resultLabel{
+    grid-column: 1;
+}
+
+.TotalLabel {
+    grid-column: 5;
+}
+
+#Button {
+    grid-column: 5;
+    width: 150px;
+    height: 70px;
+    font-weight: bold;
+}
+
+.turn-number{
+    font-weight: bold;
+    size: 70%;
 }
