@@ -70,6 +70,7 @@ function updateResults() {
         let j = upperSectionScore(i + 1)
         if (!reslutsBoolArr[i]) resultsArr[i] = j;
         diceCountArr[i] = j / (i + 1);
+        
     }
     
     //For the lower section scores
@@ -135,7 +136,7 @@ function onePairScore() {
     for (let i = 0; i < 6; i++) {
         if (diceCountArr[i] > 1) onePair = i + 1;
     }
-    return onePair;
+    return onePair * 2;
 }
 
 function twoPairScore() {
