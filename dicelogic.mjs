@@ -59,7 +59,7 @@ function updateHoldArr(newHoldArr) {
 function rollDiceInArr() {
     for (let i = 0; i < diceArr.length; i++) {
         if (holdArr[i] == false) {
-            diceArr[i] = Math.floor(Math.random * 6) + 1;
+            diceArr[i] = Math.floor(Math.random() * 6) + 1;
         }
     }
 }
