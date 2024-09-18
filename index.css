@@ -15,7 +15,6 @@ body {
     display: grid;
     align-self: center;
     grid-template-columns: repeat(5, auto);
-    gap: 10px;
     width: 80%;
     padding: 50px;
     border-style: solid;
@@ -25,12 +24,13 @@ body {
         color: white;
         padding: 5px;
     }
+    justify-content: center;
+    gap: 20px;
 }
 
 .Dice {
-    width: 70px;
-    height: 70px;
-    padding: 15px;
+    width: 100px;
+    height: 100px;
     color: rgba(59, 50, 50, 0.19);
 }
 
