@@ -1,4 +1,4 @@
-import { getDiceArray, getResultsArray, rollDice, saveScore } from "./dicelogic.mjs"
+import { getDiceArray, getNumberOfThrowsLeft, getResultsArray, rollDice, saveScore } from "./dicelogic.mjs"
 
 let diceImageSrcArray = ["https://a.l3n.co/i/8WU5ID.png", "https://a.l3n.co/i/8Wc28M.png","https://a.l3n.co/i/8WUauA.png","https://a.l3n.co/i/8WUxU0.png","https://a.l3n.co/i/8WUw73.png","https://a.l3n.co/i/8WUGmq.png"]
 
@@ -17,6 +17,7 @@ rollButton.onclick = () => roll()
 function roll() {
     let hold = Array(5).fill(false)
     rollDice(hold)
+    let rollCounter = document.querySelector("#Turn").innerHTML = "Rolls left: " + getNumberOfThrowsLeft()
     let diceArray = Array(0,0,0,0,0)
     getDiceArray(diceArray)
     let resultsArray = Array(18)
