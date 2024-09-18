@@ -18,18 +18,21 @@ function roll() {
     console.log("TESTER")
     let hold = Array(5).fill(false)
     rollDice(hold)
-    let diceArray = getDiceArray()
-    let resultsArray = getResultsArray()
+    // let emptyArray1 = Array(5)
+    let diceArray = getDiceArray(Array(5))
+    // let emptyArray2 = Array(18)
+    let resultsArray = getResultsArray(Array(18))
     setDices(diceArray)
     setResults(resultsArray)
 }
 
-function setDices(dice) {
-    let diceImages = document.querySelectorAll(".Dice")
-    for (let die of diceImages) {
-        die.outerHTML = '<img src="' + '"https://a.l3n.co/i/8WU5ID.png"' +  'alt="FaceOne" class="Dice"></td>'
-    }
-}
+
+// function setDices(dice) {
+//     let diceImages = document.querySelectorAll(".Dice")
+//     for (let die of diceImages) {
+//         die.outerHTML = '<img src="' + 'https://a.l3n.co/i/8WU5ID.png' +  '"alt="FaceOne" class="Dice">'
+//     }
+// }
 
 function setResults(results) {
 

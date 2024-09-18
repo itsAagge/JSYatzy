@@ -120,7 +120,7 @@ function updateSumBonusTotal() {
 
 function upperSectionScore(eyes) {
     let count = 0;
-    for (let d of dice) {
+    for (let d of diceArr) {
         if (d == eyes) count++;
     }
     return count * eyes;
