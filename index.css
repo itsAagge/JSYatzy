@@ -4,6 +4,9 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-image: url("background-starry.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #DiceArea {
@@ -14,6 +17,10 @@ body {
     padding: 20px;
     border-style: solid;
     margin: 20px;
+    span {
+        color: white;
+        padding: 5px;
+    }
 }
 
 .Dice {
@@ -39,6 +46,10 @@ body {
     align-items: center;
     border-style: solid;
     padding: 50px;
+    label {
+        color: white;
+        padding: 5px;
+    }
     
 }
 
