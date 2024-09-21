@@ -84,9 +84,9 @@ function updateResults() {
     if (!reslutsBoolArr[9]) resultsArr[9] = twoPairScore();
     if (!reslutsBoolArr[10]) resultsArr[10] = ofAKindScore(3);
     if (!reslutsBoolArr[11]) resultsArr[11] = ofAKindScore(4);
-    if (!reslutsBoolArr[12]) resultsArr[12] = smallStraightScore();
-    if (!reslutsBoolArr[13]) resultsArr[13] = largeStraightScore();
-    if (!reslutsBoolArr[14]) resultsArr[14] = fullHouseScore();
+    if (!reslutsBoolArr[12]) resultsArr[12] = fullHouseScore();
+    if (!reslutsBoolArr[13]) resultsArr[13] = smallStraightScore();
+    if (!reslutsBoolArr[14]) resultsArr[14] = largeStraightScore();
     if (!reslutsBoolArr[15]) resultsArr[15] = chanceScore();
     if (!reslutsBoolArr[16]) resultsArr[16] = yatzyScore();
 }
