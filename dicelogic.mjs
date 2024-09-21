@@ -1,4 +1,4 @@
-export { rollDice, saveScore, getDiceArray, getResultsArray, getNumberOfThrowsLeft }
+export { rollDice, saveScore, getDiceArray, getResultsArray, getResultsBoolArray, getNumberOfThrowsLeft }
 //data fields
 let diceArr = Array(5).fill(0) //Holds the faces of the rolled dice
 let holdArr = Array(5).fill(false) //Holds the true/false value if a dice should be hold (not be rolled again)
@@ -39,6 +39,12 @@ function getDiceArray(arrayToReturn) {
 function getResultsArray(arrayToReturn) {
     for (let i = 0; i < resultsArr.length; i++) {
         arrayToReturn[i] = resultsArr[i]
+    }
+}
+
+function getResultsBoolArray(arrayToReturn) {
+    for (let i = 0; i < reslutsBoolArr.length; i++) {
+        arrayToReturn[i] = reslutsBoolArr[i]
     }
 }
 
