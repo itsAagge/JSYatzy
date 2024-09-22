@@ -11,7 +11,7 @@ rollButton.onclick = () => roll()
 // Sets all input elements onclick action as saveScore, unless they're index is 6,7 or 17 which corresponds to Sum,Bonus and Total
 function activateResultSaveFields(activate, reslutsBoolArr) {
     for (let i in inputField) {
-        if (i != 6 && i != 7 && i <= 17 && activate && !reslutsBoolArr[i]) {
+        if (i != 6 && i != 7 && i <= 16 && activate && !reslutsBoolArr[i]) {
             inputField[i].onclick = () => saveRoll(i)
         } else if (i <= 17) {
             inputField[i].onclick = null
@@ -47,6 +47,12 @@ function saveRoll(i) {
     let resultsArray = Array(18)
     getResultsArray(resultsArray)
     setResults(resultsArray)
+    let isGameOver = checkIfGameOver(reslutsBoolArr);
+    if (isGameOver) {
+        if (confirm("Tillykke, du fik " + inputField[17].value + " point. Ønsker du at spille igen?")) {
+            location.reload();
+        }
+    }
 }
 
 // Gives the ability to hold the individual die and display that it is held
@@ -90,4 +96,15 @@ function setResults(results) {
     for (let i in inputField) {
         if (i < 18) inputField[i].value = results[i]
     }
+}
+
+// Checks if all results have been saved
+function checkIfGameOver(reslutsBoolArr) {
+    let isGameOver = true;
+    for (let i in reslutsBoolArr) {
+        if (i != 6 && i != 7 && i <= 16 && reslutsBoolArr[i] == false) {
+            isGameOver = false;
+        }
+    }
+    return isGameOver;
 }
